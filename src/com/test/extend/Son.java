@@ -18,21 +18,21 @@ public class Son extends Parent implements inter{
 	 
 	
 	
-	@Override //¸²¸Ç
+	@Override //è¦†ç›–
 	public void NoParametersMethod() {
-//		super.NoParametersMethod();   //ÓĞ´Ë¾äÔò ¾Í»áµ÷ÓÃ¸¸ÀàµÄ¸Ã·½·¨£¡Ã»ÓĞÔò²»»áµ÷ÓÃ¸¸ÀàµÄ¸Ã·½·¨
+//		super.NoParametersMethod();   //æœ‰æ­¤å¥åˆ™ å°±ä¼šè°ƒç”¨çˆ¶ç±»çš„è¯¥æ–¹æ³•ï¼æ²¡æœ‰åˆ™ä¸ä¼šè°ƒç”¨çˆ¶ç±»çš„è¯¥æ–¹æ³•
 		System.out.println("son1 Method....");
 	}
 
 
  
-	@Override 		//ÖØÔØ
+	@Override 		//é‡è½½
 	public void hasParametersMethod(int a) {
-//		super.hasParametersMethod(a); //ÓĞ´Ë¾äÔò ¾Í»áµ÷ÓÃ¸¸ÀàµÄ¸Ã·½·¨£¡Ã»ÓĞÔò²»»áµ÷ÓÃ¸¸ÀàµÄ¸Ã·½·¨
+//		super.hasParametersMethod(a); //æœ‰æ­¤å¥åˆ™ å°±ä¼šè°ƒç”¨çˆ¶ç±»çš„è¯¥æ–¹æ³•ï¼æ²¡æœ‰åˆ™ä¸ä¼šè°ƒç”¨çˆ¶ç±»çš„è¯¥æ–¹æ³•
 		System.out.println("son2 Method....");
 	}
  
-	//	@Override //ÖØÔØ
+	//	@Override //é‡è½½
 	public int hasParametersMethod(int a, int b) {
 		System.out.println("son3 Method: "+a+","+b);
 		return 1;
@@ -62,16 +62,18 @@ public class Son extends Parent implements inter{
 
 	
 	
-//	public Long getLenght() { return new Long(5); }  		//´íÎóµÄ·µ»ØÀàĞÍ£¬·µ»ØÀàĞÍ±ØĞëÎªInteger
+//	public Long getLenght() { return new Long(5); }  		//é”™è¯¯çš„è¿”å›ç±»å‹ï¼Œè¿”å›ç±»å‹å¿…é¡»ä¸ºInteger
 	@Override
-	public Integer getLenght() { return new Integer(6);   } //¡ï¡ï¡ï(·½·¨ÃûÏàÍ¬,²ÎÊıÏàÍ¬µÄ)<son¼Ì³Ğparent>µÄÖØÔØ@Override²»ÄÜ¸Ä±ä·µ»ØÀàĞÍ
+	public Integer getLenght() { return new Integer(6);   } //â˜…â˜…â˜…(æ–¹æ³•åç›¸åŒ,å‚æ•°ç›¸åŒçš„)<sonç»§æ‰¿parent>çš„é‡è½½@Overrideä¸èƒ½æ”¹å˜è¿”å›ç±»å‹
 	
-//	@Override//´Ë´¦ ÄÜ¼Ó@Override 
+//	@Override//æ­¤å¤„ èƒ½åŠ @Override 
 //	public Parent aMethod() { System.out.println("public void aMethod(String s)"); return new Parent();}	
-	//@Override//´Ë´¦²¢²»ÊÇ ÖØÔØ ¸¸ÀàµÄ aMethod·½·¨ ,so¾Í²»ÄÜ¼Ó@Override(ËãÊÇ×ÓÀàµÄ)£¬ËãÊÇ ×Ô¼ºÀàÖĞµÄ·½·¨ÖØÔØ£¡
-	public void aMethod(String s) { }					//  ÖØÔØ ×ÓÀà¶Ô¸¸Àà¸²¸ÇµÄ·½·¨
-	public int  aMethod(String s, int i) {return 1; }	//	ÖØÔØ ×ÓÀà¶Ô¸¸Àà¸²¸ÇµÄ·½·¨					×Ô¼ºÀàÖĞµÄ·½·¨ÖØÔØ
-	@Override  //´Ë´¦		¸²¸Ç ¸¸ÀàµÄ aMethod·½·¨,so   ÄÜ¼Ó@Override£¡
+	//@Override//æ­¤å¤„å¹¶ä¸æ˜¯ é‡è½½ çˆ¶ç±»çš„ aMethodæ–¹æ³• ,soå°±ä¸èƒ½åŠ @Override(ç®—æ˜¯å­ç±»çš„)ï¼Œç®—æ˜¯ è‡ªå·±ç±»ä¸­çš„æ–¹æ³•é‡è½½ï¼
+	public void aMethod(String s) { }					//  é‡è½½ å­ç±»å¯¹çˆ¶ç±»è¦†ç›–çš„æ–¹æ³•
+	public int  aMethod(String s, int i) {return 1; }	//	é‡è½½ å­ç±»å¯¹çˆ¶ç±»è¦†ç›–çš„æ–¹æ³•					è‡ªå·±ç±»ä¸­çš„æ–¹æ³•é‡è½½
+	public boolean  aMethod(int s, int i) {return false; }//åŒåæˆå‘˜æ–¹æ³•ä¸è¿”å›ç±»å‹æ— å…³ï¼Œåªä¸å‚æ•°æœ‰å…³ï¼šåŒ…æ‹¬ä¸ªæ•°ï¼Œä½ç½®ï¼ˆå‚æ•°éƒ½ä¸€æ ·ï¼Œä½†æ˜¯æ”¾ç½®çš„ä½ç½®ä¸åŒä¹Ÿå¯ä»¥ï¼ï¼‰
+	
+	@Override  //æ­¤å¤„		è¦†ç›– çˆ¶ç±»çš„ aMethodæ–¹æ³•,so   èƒ½åŠ @Overrideï¼
 	public Parent aMethod() { return new Parent(); } 
 	
 	
