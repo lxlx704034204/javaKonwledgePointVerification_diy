@@ -51,7 +51,7 @@ public class Program {
 ////	                try {
 //	                    int[] s = new int[1];
 //	                    System.out.println("OK");
-////	                    System.out.println(s[1]); // Êı×éÔ½½ç
+////	                    System.out.println(s[1]); // æ•°ç»„è¶Šç•Œ
 ////	                } catch (Throwable t) {
 ////	                    System.out.println("Error");
 ////	                }
@@ -62,63 +62,63 @@ public class Program {
 //	        0, 2, TimeUnit.MILLISECONDS); // TimeUnit.MILLISECONDS,   TimeUnit.SECONDS
 			
 /*			 
-		Timer timer=new Timer();//ÊµÀı»¯TimerÀà   
+		Timer timer=new Timer();//å®ä¾‹åŒ–Timerç±»   
 		timer.schedule(new TimerTask(){   
 			public void run(){   
-				System.out.println("ÍË³ö");   
+				System.out.println("é€€å‡º");   
 				this.cancel();
 			}
-		},	3000);//Îå°ÙºÁÃë  
+		},	3000);//äº”ç™¾æ¯«ç§’  
 		
 		
 //		new Handler().postDelayed(new Runnable() {
 //            @Override
 //            public void run() {
-//            	System.out.println("ÍË³ö");  
+//            	System.out.println("é€€å‡º");  
 //            }
 //        }, 3000);
 		*/
 		
 		
-//		String str1 = "[ÑÕÉ«=55, ÍøÂç=11, ÄÚ´æ=102]";
+//		String str1 = "[é¢œè‰²=55, ç½‘ç»œ=11, å†…å­˜=102]";
 //		System.out.println(str1.replace("[","").replace("]","") );
-//		String str2="ÎÒÊÇÒ»¸öÈË£¨ÖĞ¹úÈË£©aaa[ÕæµÄ]bbbb{È·¶¨}";
-//		System.out.println(str2.replaceAll("\\(.*?\\)|\\{.*?}|\\[.*?]|£¨.*?£©", "") );   
+//		String str2="æˆ‘æ˜¯ä¸€ä¸ªäººï¼ˆä¸­å›½äººï¼‰aaa[çœŸçš„]bbbb{ç¡®å®š}";
+//		System.out.println(str2.replaceAll("\\(.*?\\)|\\{.*?}|\\[.*?]|ï¼ˆ.*?ï¼‰", "") );   
 		
-//		System.out.println("".replaceAll("^\"|\"$", "")); // ÒÔ\"¿ªÍ·  »ò  ÒÔ\"½áÎ²  
+//		System.out.println("".replaceAll("^\"|\"$", "")); // ä»¥\"å¼€å¤´  æˆ–  ä»¥\"ç»“å°¾  
 /*
-Ò»¡¢ĞĞ¶¨Î»·û£¨^ºÍ$£© 
-¡¡¡¡ĞĞ¶¨Î»·û¾ÍÊÇÓÃÀ´ÃèÊö×Ö´®µÄ±ß½ç¡£¡°^¡±±íÊ¾ĞĞµÄ¿ªÊ¼£»¡°$¡±±íÊ¾ĞĞµÄ½áÎ²¡£Èç£º 
-¡¡¡¡^tm : ¸Ã±í´ïÊ½±íÊ¾ÒªÆ¥Åä×Ö´®tmµÄ¿ªÊ¼Î»ÖÃÊÇĞĞÍ·£¬Èçtm equal Tomorrow Moon¾Í¿ÉÒÔÆ¥Åä 
-¡¡¡¡tm$ : ¸Ã±í´ïÊ½±íÊ¾ÒªÆ¥Åä×Ö´®tmµÄÎ»ÖÃÊÇĞĞÎ²£¬Tomorrow Moon equal tmÆ¥Åä¡£ 
-¡¡¡¡Èç¹ûÒªÆ¥ÅäµÄ×Ö´®¿ÉÒÔ³öÏÖÔÚ×Ö·û´®µÄÈÎÒâ²¿·Ö£¬ÄÇÃ´¿ÉÒÔÖ±½Ó   Ğ´³É £ºtm
-ËÄ¡¢Ñ¡Ôñ×Ö·û£¨|£© 
- ¡¡¡¡»¹ÓĞÒ»ÖÖ·½·¨¿ÉÒÔÊµÏÖÉÏÃæµÄÆ¥ÅäÄ£Ê½£¬¾ÍÊÇÊ¹ÓÃÑ¡Ôñ×Ö·û£¨|£©¡£¸Ã×Ö·û¿ÉÒÔÀí½âÎª¡°»ò¡±£¬ÈçÉÏÀıÒ²¿ÉÒÔĞ´³É (T|t)(M|m)£¬¸Ã±í´ïÊ½µÄÒâË¼ÊÇÒÔ×ÖÄ¸T»òt¿ªÍ·£¬ºóÃæ½ÓÒ»¸ö×ÖÄ¸M»òm¡£ 
-¡¡¡¡Ê¹ÓÃ¡°[]¡±ºÍÊ¹ÓÃ¡°|¡±µÄÇø±ğÔÚÓÚ¡°[]¡±Ö»ÄÜÆ¥Åäµ¥¸ö×Ö·û£¬¶ø¡°|¡±¿ÉÒÔÆ¥ÅäÈÎÒâ³¤¶ÈµÄ×Ö´®¡£Èç¹û²»ÅÂÂé·³£¬ÉÏÀı»¹¿ÉÒÔĞ´Îª £ºTM|tm|Tm|tM
-Èı¡¢×Ö·ûÀà£¨[ ]£© 
-¡¡¡¡ÕıÔò±í´ïÊ½ÊÇÇø·Ö´óĞ¡Ğ´µÄ£¬Èç¹ûÒªºöÂÔ´óĞ¡Ğ´¿ÉÊ¹ÓÃ·½À¨ºÅ±í´ïÊ½¡°[]¡±¡£Ö»ÒªÆ¥ÅäµÄ×Ö·û³öÏÖÔÚ·½À¨ºÅÄÚ£¬¼´¿É±íÊ¾Æ¥Åä³É¹¦¡£µ«Òª×¢Òâ£ºÒ»¸ö·½À¨ºÅÖ»ÄÜÆ¥ÅäÒ»¸ö×Ö·û¡£ÀıÈç£¬ÒªÆ¥ÅäµÄ×Ö´®tm²»Çø·Ö´óĞ¡Ğ´£¬ÄÇÃ´¸Ã±í´ïÊ½Ó¦¸ÃĞ´×÷ÈçÏÂ¸ñÊ½£º[Tt][Mm]
+ä¸€ã€è¡Œå®šä½ç¬¦ï¼ˆ^å’Œ$ï¼‰ 
+ã€€ã€€è¡Œå®šä½ç¬¦å°±æ˜¯ç”¨æ¥æè¿°å­—ä¸²çš„è¾¹ç•Œã€‚â€œ^â€è¡¨ç¤ºè¡Œçš„å¼€å§‹ï¼›â€œ$â€è¡¨ç¤ºè¡Œçš„ç»“å°¾ã€‚å¦‚ï¼š 
+ã€€ã€€^tm : è¯¥è¡¨è¾¾å¼è¡¨ç¤ºè¦åŒ¹é…å­—ä¸²tmçš„å¼€å§‹ä½ç½®æ˜¯è¡Œå¤´ï¼Œå¦‚tm equal Tomorrow Moonå°±å¯ä»¥åŒ¹é… 
+ã€€ã€€tm$ : è¯¥è¡¨è¾¾å¼è¡¨ç¤ºè¦åŒ¹é…å­—ä¸²tmçš„ä½ç½®æ˜¯è¡Œå°¾ï¼ŒTomorrow Moon equal tmåŒ¹é…ã€‚ 
+ã€€ã€€å¦‚æœè¦åŒ¹é…çš„å­—ä¸²å¯ä»¥å‡ºç°åœ¨å­—ç¬¦ä¸²çš„ä»»æ„éƒ¨åˆ†ï¼Œé‚£ä¹ˆå¯ä»¥ç›´æ¥   å†™æˆ ï¼štm
+å››ã€é€‰æ‹©å­—ç¬¦ï¼ˆ|ï¼‰ 
+ ã€€ã€€è¿˜æœ‰ä¸€ç§æ–¹æ³•å¯ä»¥å®ç°ä¸Šé¢çš„åŒ¹é…æ¨¡å¼ï¼Œå°±æ˜¯ä½¿ç”¨é€‰æ‹©å­—ç¬¦ï¼ˆ|ï¼‰ã€‚è¯¥å­—ç¬¦å¯ä»¥ç†è§£ä¸ºâ€œæˆ–â€ï¼Œå¦‚ä¸Šä¾‹ä¹Ÿå¯ä»¥å†™æˆ (T|t)(M|m)ï¼Œè¯¥è¡¨è¾¾å¼çš„æ„æ€æ˜¯ä»¥å­—æ¯Tæˆ–tå¼€å¤´ï¼Œåé¢æ¥ä¸€ä¸ªå­—æ¯Mæˆ–mã€‚ 
+ã€€ã€€ä½¿ç”¨â€œ[]â€å’Œä½¿ç”¨â€œ|â€çš„åŒºåˆ«åœ¨äºâ€œ[]â€åªèƒ½åŒ¹é…å•ä¸ªå­—ç¬¦ï¼Œè€Œâ€œ|â€å¯ä»¥åŒ¹é…ä»»æ„é•¿åº¦çš„å­—ä¸²ã€‚å¦‚æœä¸æ€•éº»çƒ¦ï¼Œä¸Šä¾‹è¿˜å¯ä»¥å†™ä¸º ï¼šTM|tm|Tm|tM
+ä¸‰ã€å­—ç¬¦ç±»ï¼ˆ[ ]ï¼‰ 
+ã€€ã€€æ­£åˆ™è¡¨è¾¾å¼æ˜¯åŒºåˆ†å¤§å°å†™çš„ï¼Œå¦‚æœè¦å¿½ç•¥å¤§å°å†™å¯ä½¿ç”¨æ–¹æ‹¬å·è¡¨è¾¾å¼â€œ[]â€ã€‚åªè¦åŒ¹é…çš„å­—ç¬¦å‡ºç°åœ¨æ–¹æ‹¬å·å†…ï¼Œå³å¯è¡¨ç¤ºåŒ¹é…æˆåŠŸã€‚ä½†è¦æ³¨æ„ï¼šä¸€ä¸ªæ–¹æ‹¬å·åªèƒ½åŒ¹é…ä¸€ä¸ªå­—ç¬¦ã€‚ä¾‹å¦‚ï¼Œè¦åŒ¹é…çš„å­—ä¸²tmä¸åŒºåˆ†å¤§å°å†™ï¼Œé‚£ä¹ˆè¯¥è¡¨è¾¾å¼åº”è¯¥å†™ä½œå¦‚ä¸‹æ ¼å¼ï¼š[Tt][Mm]
 
 
 */
 		
 		//----------------------------			
-//		//HashMapÅÅĞò
+//		//HashMapæ’åº
 //		HashMap<Integer, User> users = new HashMap<Integer, User>();
-//		users.put(1, new User("ÕÅÈı", 25));
-//		users.put(3, new User("ÀîËÄ", 22));
-//		users.put(2, new User("ÍõÎå", 28));
-//		System.out.println("ÅÅĞòÇ°£º"+users);
+//		users.put(1, new User("å¼ ä¸‰", 25));
+//		users.put(3, new User("æå››", 22));
+//		users.put(2, new User("ç‹äº”", 28));
+//		System.out.println("æ’åºå‰ï¼š"+users);
 //		
-//		System.out.println("ÅÅĞòºó£º"+sortHashMap(users));
+//		System.out.println("æ’åºåï¼š"+sortHashMap(users));
 		
 		 
 //	    List<Integer> nums = new ArrayList<Integer>();  
 //        nums.add(3); nums.add(5); nums.add(1);nums.add(0);  
-//        System.out.println("ÅÅĞòÇ°£º"+nums);  
+//        System.out.println("æ’åºå‰ï¼š"+nums);  
 //        Collections.sort(nums);  
-//        System.out.println("ÉıĞòÅÅĞòºó£º"+nums); 
+//        System.out.println("å‡åºæ’åºåï¼š"+nums); 
 //        Collections.reverse(nums);  
-//        System.out.println("½µĞòÅÅĞòºó£º"+nums);
+//        System.out.println("é™åºæ’åºåï¼š"+nums);
 		
 		//----------------------------			
 //		List<String> list = new ArrayList<String>();
@@ -148,49 +148,49 @@ public class Program {
 //		}
 		
 		//----------------------------			
-		//¡¾j++ ºÍ ++jµÄ±¾ÖÊÇø±ğ£º¡¿
+		//ã€j++ å’Œ ++jçš„æœ¬è´¨åŒºåˆ«ï¼šã€‘
 //        int m1, j1 = 5;
-//        m1 = (j1++) ; 	// ´Ë²½ÔËËã[0  + (j1++)]½áÊøºó£¬j¼Ó1
+//        m1 = (j1++) ; 	// æ­¤æ­¥è¿ç®—[0  + (j1++)]ç»“æŸåï¼ŒjåŠ 1
 //        System.out.println(m1 + " + " + j1); //5 + 6
 //        
 //        int m2, j2 = 5;
 //        //		a	+	b	 +	c
 //        m2 = (j2++) + (j2++) + (j2++); // 
 //        System.out.println(m2 + " + " + j2);//18 + 8
-////		++ÔÚ²ÎÓëÔËËãÊ±£¬ÔÚ²Ù×÷Êıºó£¬ÏÈ²ÎÓëÔËËãÔÙ×ÔÔö£»
-////		Òò´Ë,µÚÒ»´ÎÔËËã[	  0  + (j2++) ¼´: (0 + 5) ]ºó£ºres1 = 5£¬   È»ºój2×ÔÔöÎª6(¼´:bÎ»ÖÃµÄ(j2++)ÒÑ¾­±äÎª6 );
-////		          µÚ¶ş´ÎÔËËã[res1  + (j2++) ¼´: (5 + 6) ]ºó£ºres2 = 11£¬È»ºój2×ÔÔöÎª7(¼´:cÎ»ÖÃµÄ(j2++)ÒÑ¾­±äÎª7 );
-////		          µÚÈı´ÎÔËËã[res2  + (j2++) ¼´: (6 + 7) ]ºó£ºres3 = 18£¬È»ºój2×ÔÔöÎª8(¼´:Èç¹ûÏÂÒ»²½Ë­È¡j2µÄÖµµÄ»°Ëü¾ÍÊÇ8ÁË£¡£¡£¡ );
-////		         ´ËÊ±							m2	=    res3 = 18;
+////		++åœ¨å‚ä¸è¿ç®—æ—¶ï¼Œåœ¨æ“ä½œæ•°åï¼Œå…ˆå‚ä¸è¿ç®—å†è‡ªå¢ï¼›
+////		å› æ­¤,ç¬¬ä¸€æ¬¡è¿ç®—[	  0  + (j2++) å³: (0 + 5) ]åï¼šres1 = 5ï¼Œ   ç„¶åj2è‡ªå¢ä¸º6(å³:bä½ç½®çš„(j2++)å·²ç»å˜ä¸º6 );
+////		          ç¬¬äºŒæ¬¡è¿ç®—[res1  + (j2++) å³: (5 + 6) ]åï¼šres2 = 11ï¼Œç„¶åj2è‡ªå¢ä¸º7(å³:cä½ç½®çš„(j2++)å·²ç»å˜ä¸º7 );
+////		          ç¬¬ä¸‰æ¬¡è¿ç®—[res2  + (j2++) å³: (6 + 7) ]åï¼šres3 = 18ï¼Œç„¶åj2è‡ªå¢ä¸º8(å³:å¦‚æœä¸‹ä¸€æ­¥è°å–j2çš„å€¼çš„è¯å®ƒå°±æ˜¯8äº†ï¼ï¼ï¼ );
+////		         æ­¤æ—¶							m2	=    res3 = 18;
 //		
 //        int m3, j3 = 5;
 //        //		a	+	b	 +	c
 //        m3 = (++j3) + (++j3) + (++j3);
 //        System.out.println(m3 + " + " + j3); // 21 + 8
-////      ++ÔÚÇ°£¬ÏÈ×ÔÔö£¬ÔÙ²ÎÓëÔËËã£»
-////	        Òò´Ë,µÚÒ»´Î×ÔÔöºó£º	j3×ÔÔöµ½6(¼´:aÎ»ÖÃµÄ(++j3)ÒÑ¾­±äÎª6 ), È»ºó¿ªÊ¼µÚÒ»´ÎÔËËã[	0  + (++j3) ¼´: (0  + 6) ]ºó£ºres1 = 6 ;
-////	                  µÚ¶ş´Î×ÔÔöºó£º	j3×ÔÔöµ½7(¼´:bÎ»ÖÃµÄ(++j3)ÒÑ¾­±äÎª7 ),	È»ºó¿ªÊ¼µÚ¶ş´ÎÔËËã[res1  + (++j3) ¼´: (6  + 7) ]ºó£ºres2 = 13;
-////	                  µÚÈı´Î×ÔÔöºó£º	j3×ÔÔöµ½8(¼´:cÎ»ÖÃµÄ(++j3)ÒÑ¾­±äÎª8 ),	È»ºó¿ªÊ¼µÚÈı´ÎÔËËã[res2  + (++j3) ¼´: (13 + 8) ]ºó£ºres3 = 21(¼´:Èç¹ûÏÂÒ»²½Ë­È¡j3µÄÖµµÄ»°Ëü¾ÍÊÇ8ÁË£¡£¡£¡ );
-////	                 ´ËÊ±							m2	=    res3 = 18;
+////      ++åœ¨å‰ï¼Œå…ˆè‡ªå¢ï¼Œå†å‚ä¸è¿ç®—ï¼›
+////	        å› æ­¤,ç¬¬ä¸€æ¬¡è‡ªå¢åï¼š	j3è‡ªå¢åˆ°6(å³:aä½ç½®çš„(++j3)å·²ç»å˜ä¸º6 ), ç„¶åå¼€å§‹ç¬¬ä¸€æ¬¡è¿ç®—[	0  + (++j3) å³: (0  + 6) ]åï¼šres1 = 6 ;
+////	                  ç¬¬äºŒæ¬¡è‡ªå¢åï¼š	j3è‡ªå¢åˆ°7(å³:bä½ç½®çš„(++j3)å·²ç»å˜ä¸º7 ),	ç„¶åå¼€å§‹ç¬¬äºŒæ¬¡è¿ç®—[res1  + (++j3) å³: (6  + 7) ]åï¼šres2 = 13;
+////	                  ç¬¬ä¸‰æ¬¡è‡ªå¢åï¼š	j3è‡ªå¢åˆ°8(å³:cä½ç½®çš„(++j3)å·²ç»å˜ä¸º8 ),	ç„¶åå¼€å§‹ç¬¬ä¸‰æ¬¡è¿ç®—[res2  + (++j3) å³: (13 + 8) ]åï¼šres3 = 21(å³:å¦‚æœä¸‹ä¸€æ­¥è°å–j3çš„å€¼çš„è¯å®ƒå°±æ˜¯8äº†ï¼ï¼ï¼ );
+////	                 æ­¤æ—¶							m2	=    res3 = 18;
 
 		//----------------------------			
 //		User u = new User("n1",1);  
 //		System.out.println(  SerializeTool.getObjectFromString("\"name\":\"n1\";\"age\":1", User.class) );
 //		System.out.println(  SerializeTool.object2String(u) );//{\"name\":\"n1\";\"age\":1}
 		
-//		//list¼¯ºÏµÄĞòÁĞ»¯Óë·´ĞòÁĞ»¯£º 
+//		//listé›†åˆçš„åºåˆ—åŒ–ä¸ååºåˆ—åŒ–ï¼š 
 //		List<String> myAL = new ArrayList<String>();
 //        myAL.add("aaaaaa! ");
 //        myAL.add("bbbb-0");
-//        System.out.println("ÎÒµÄArrayList£º" + myAL.get(0));
-//        // ĞòÁĞ»¯Ê¹ÓÃµÄÊä³öÁ÷
+//        System.out.println("æˆ‘çš„ArrayListï¼š" + myAL.get(0));
+//        // åºåˆ—åŒ–ä½¿ç”¨çš„è¾“å‡ºæµ
 //        ObjectOutputStream OOS = null;
-//        // ĞòÁĞ»¯ºóÊı¾İÁ÷¸øByteArrayOutputStream À´±£´æ¡£
-//        // ByteArrayOutputStream ¿É×ª³É×Ö·û´®»ò×Ö½ÚÊı×é
+//        // åºåˆ—åŒ–åæ•°æ®æµç»™ByteArrayOutputStream æ¥ä¿å­˜ã€‚
+//        // ByteArrayOutputStream å¯è½¬æˆå­—ç¬¦ä¸²æˆ–å­—èŠ‚æ•°ç»„
 //        ByteArrayOutputStream BAOS = new ByteArrayOutputStream();
-//        // ByteArrayInputStream ¿É½ÓÊÕÒ»¸ö×Ö½ÚÊı×é "byte[] "¡£¹©·´ĞòÁĞ»¯×ö²ÎÊı
+//        // ByteArrayInputStream å¯æ¥æ”¶ä¸€ä¸ªå­—èŠ‚æ•°ç»„ "byte[] "ã€‚ä¾›ååºåˆ—åŒ–åšå‚æ•°
 //        ByteArrayInputStream BAIS = null;
-//        // ·´ĞòÁĞ»¯Ê¹ÓÃµÄÊäÈëÁ÷
+//        // ååºåˆ—åŒ–ä½¿ç”¨çš„è¾“å…¥æµ
 //        ObjectInputStream OIS = null;
 //        try {
 //            // byte[] myb= "s ";
@@ -199,21 +199,21 @@ public class Program {
 //            byte[] abc = BAOS.toByteArray();
 //            System.out.println("abc:"+abc);
 //            String StrMySerializer = abc.toString();
-//            System.out.println("ĞòÁĞ»¯:" + StrMySerializer);
+//            System.out.println("åºåˆ—åŒ–:" + StrMySerializer);
 //            OOS.close();
 //             
-//            //·´ĞòÁĞ»¯
+//            //ååºåˆ—åŒ–
 //            byte[] ddd = StrMySerializer.getBytes();
 //            System.out.println("ddd:"+ddd);
 //            BAIS = new ByteArrayInputStream(abc);
 //            OIS = new ObjectInputStream(BAIS);
 //            ArrayList c = (ArrayList) (OIS.readObject());
-//            System.out.println("·´ĞòÁĞ»¯:" + c.get(0)+c.get(1));
+//            System.out.println("ååºåˆ—åŒ–:" + c.get(0)+c.get(1));
 //            OIS.close();
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        } catch (Exception ex) {
-//            System.out.println("ĞòÁĞ»¯Ê±²úÉú´íÎó ");
+//            System.out.println("åºåˆ—åŒ–æ—¶äº§ç”Ÿé”™è¯¯ ");
 //        }
 
 //----------------------------			
@@ -221,7 +221,7 @@ public class Program {
 //		 
 //		long ttt = System.currentTimeMillis();
 //		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//      String sd = sdf.format(new Date(Long.parseLong(String.valueOf(ttt))));   // Ê±¼ä´Á×ª»»³ÉÊ±¼ä
+//      String sd = sdf.format(new Date(Long.parseLong(String.valueOf(ttt))));   // æ—¶é—´æˆ³è½¬æ¢æˆæ—¶é—´
 //      System.out.println(sd);
 		
 //		System.out.println(ttt-a1);
@@ -235,7 +235,7 @@ public class Program {
 //		System.out.println(Calendar.getInstance().getTimeInMillis());
 //		System.out.println(new Date().getTime());
   
-//		String str = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());// java »ñÈ¡14Î» Ê±¼ä´Á
+//		String str = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());// java è·å–14ä½ æ—¶é—´æˆ³
 //		System.out.println(str );
 //		
 		 
@@ -243,7 +243,7 @@ public class Program {
 //		System.out.println( ((int)(Math.random()*(9999-1000+1))+1000) );
 	
 //----------------------------			
-//		//cha[]³õÊ¼»¯
+//		//cha[]åˆå§‹åŒ–
 //		String ss ="";
 //		char[] cha;  
 //		cha= ss.toCharArray();
@@ -287,8 +287,8 @@ public class Program {
 //		ob1 =JSONObject.fromObject(json1);
 ////		ob2 =JSONObject.fromObject(json2.toString());
 //  
-//		if(ob1.getJSONObject("wifi").has("WiFi_2.4G_MAC_Filter")) System.out.println("-¡ï3-: ");	//¼´Ê¹"WiFi_2.4G_MAC_Filter"ÊÇ¸öjsonArray£¬Ò²¿ÉÒÔÅĞ¶Ï£¡£¡£¡
-//		if(ob1.getJSONObject("wifi").containsKey("WiFi_2.4G_MAC_Filter")) System.out.println("-¡ï4-: ");
+//		if(ob1.getJSONObject("wifi").has("WiFi_2.4G_MAC_Filter")) System.out.println("-â˜…3-: ");	//å³ä½¿"WiFi_2.4G_MAC_Filter"æ˜¯ä¸ªjsonArrayï¼Œä¹Ÿå¯ä»¥åˆ¤æ–­ï¼ï¼ï¼
+//		if(ob1.getJSONObject("wifi").containsKey("WiFi_2.4G_MAC_Filter")) System.out.println("-â˜…4-: ");
 		
 		//----------------------------		
 		//"17/04/24, 10:39:52" --> "17/04/24 10:39:52"
@@ -306,7 +306,7 @@ public class Program {
 //		 String body = "{" + "FileID" + ":" + 16 + "," +
 //                 "NWSTAT" + ":" +
 //                 "{" + "\"quota_limit\"" + ":" + "\""+str1+"\"" + "}" + "}";
-//		 //ÏëÒªµÃµ½{"FileID":16,"NWSTAT":{"quota_limit":"1"}}£¬¼´Ê¹str1ÊÇString Ò²ÒªÔÚstr1µÄÁ½±ß¼ÓÉÏË«ÒıºÅ£¡
+//		 //æƒ³è¦å¾—åˆ°{"FileID":16,"NWSTAT":{"quota_limit":"1"}}ï¼Œå³ä½¿str1æ˜¯String ä¹Ÿè¦åœ¨str1çš„ä¸¤è¾¹åŠ ä¸ŠåŒå¼•å·ï¼
 //		 JSONObject requestBody = JSONObject.fromObject(body);
 //		System.out.println(requestBody.toString());
 		
@@ -322,7 +322,7 @@ public class Program {
 ////		if(list == null) System.out.println("test-3-"); 
 ////		if(list == null) System.out.println("test-4-"); 
 		
-		//----------------------------	java list ½»¼¯ ²¢¼¯ ²î¼¯ È¥ÖØ¸´²¢¼¯
+		//----------------------------	java list äº¤é›† å¹¶é›† å·®é›† å»é‡å¤å¹¶é›†
 		List<String> list1 = new ArrayList<String>();
 		   List<String> list2 = new ArrayList<String>();
 		   list1.add("a1");
@@ -338,8 +338,8 @@ public class Program {
 		   list2.add("c2");
 		   list2.add("d2");
 		
-		   	//½»¼¯£º
-//		   list1.retainAll(list2);// ÓĞĞ§µÄ½á¹ûÎª .µÄÇ°Õß(ºóÕßÓĞÖØ¸´ÎŞÓ°Ïì£¡) £¡	ÎŞÈ¥ÖØµÄĞ§¹û
+		   	//äº¤é›†ï¼š
+//		   list1.retainAll(list2);// æœ‰æ•ˆçš„ç»“æœä¸º .çš„å‰è€…(åè€…æœ‰é‡å¤æ— å½±å“ï¼) ï¼	æ— å»é‡çš„æ•ˆæœ
 //		
 //		   System.out.print(list1);
 		    
@@ -350,13 +350,13 @@ public class Program {
 //		   if(mm.values() == null)   System.out.print("way_3");
 //		   if(mm.size()<=0)   System.out.print("way_4"); 
 		   
-//		 //----------------------------ÎÄ¼ş²Ù×÷£º¸´ÖÆ
+//		 //----------------------------æ–‡ä»¶æ“ä½œï¼šå¤åˆ¶
 //		try {  
 //			File f1 = new File("d:/tr1/tr2");
 //			File f2 = new File("c:/cp1/cp2");
 //			if(!f1.exists())  f1.mkdirs(); if(!f2.exists())  f2.mkdirs();    
-//			File file1 = new File(f1,"test.txt");//f1ÎÄ¼ş¼ĞÏÂ´´½¨ "test.txt"ÎÄ¼ş	"d:/tr1/tr2/test.txt"
-//			File file2 = new File(f2,"copy.txt");//f2ÎÄ¼ş¼ĞÏÂ´´½¨ "copy.txt"ÎÄ¼ş
+//			File file1 = new File(f1,"test.txt");//f1æ–‡ä»¶å¤¹ä¸‹åˆ›å»º "test.txt"æ–‡ä»¶	"d:/tr1/tr2/test.txt"
+//			File file2 = new File(f2,"copy.txt");//f2æ–‡ä»¶å¤¹ä¸‹åˆ›å»º "copy.txt"æ–‡ä»¶
 //			try {
 //				if( file1.exists()) file1.delete();
 //				if(!file1.exists()) file1.createNewFile();
@@ -367,7 +367,7 @@ public class Program {
 //			FileOutputStream out=new FileOutputStream(file1,true);     
 //			for(int i=0;i<3;i++){
 //	             StringBuffer sb=new StringBuffer();
-//	             sb.append("ÕâÊÇµÚ"+i+"ĞĞ: ¹ş¹ş"+"\n");
+//	             sb.append("è¿™æ˜¯ç¬¬"+i+"è¡Œ: å“ˆå“ˆ"+"\n");
 //	             out.write(sb.toString().getBytes("utf-8"));
 //	        }        
 //	        out.close();
@@ -380,18 +380,62 @@ public class Program {
 		   
 //		   //----------------------------try(return...)...catch(){}retrun...
 //		   System.out.println(pro.setex_diy2(2)); 
-		
-		  
-		   
-		   
-		   
-		   
-		    
 
-           System.out.println("--test-5-: "+ pro.hit("abcabbab","ab"));
+		 //----------------------------Pattern.compile(find).matcher(src)...
+//           System.out.println("--test-5-: "+ pro.hit("abcabbab","ab"));
+//           System.out.println("--test-6-: "+ pro.hit2("abcabbab","ab"));
+ 	   
+		 //----------------------------%å–ä½™  /å–æ•´...
+//		   System.out.println(99699%10);	//å–ä½™(å–æ¨¡è¿ç®—)
+//		   System.out.println(99699/10000); //é™¤æ³•,å–æ•´
 		   
-           System.out.println("--test-6-: "+ pro.hit2("abcabbab","ab"));
-		    
+		   
+//		   System.out.println("è±å½¢çš„è¾¹é•¿ä¸º");								//4
+//		   Scanner in=new Scanner(System.in);
+//		   int n=in.nextInt();
+//		   //ä¸ŠåŠéƒ¨åˆ†<åŒ…å«æ­£ä¸­é—´é‚£è¡Œ:4è¡Œ>ï¼ˆè¡Œæ•°ï¼šiï¼‰ï¼š 
+//		   for(int i=1;i<=n;i++){										//1
+//			   	for(int j=n-i;j>=1;j--)   System.out.print(" ");//ç©ºæ ¼åˆ—      //3		ï¼ˆj=n-iï¼‰;  for(int j=1;j<=n-i;j++)äº¦å¯???
+//			   	for(int k=1;k<=2*i-1;k++) System.out.print("*");//æ˜Ÿæ˜Ÿåˆ—     //1 		ï¼ˆj=2*i-1ï¼‰;
+//			   	System.out.print("\n");// æ˜Ÿå·æ‰“å®Œäº†ä¸ç”¨ç®¡ï¼Œåé¢è‡ªç„¶æ˜¯å¤šä¸ªç©ºæ ¼
+//		   }
+//		   //ä¸‹åŠéƒ¨åˆ†<æ¯”ä¸Šç­éƒ¨åˆ†å°‘ä¸€è¡Œ:3è¡Œ>ï¼ˆè¡Œæ•°ï¼šiï¼‰ï¼š
+//		   for(int i=n-1;i>=1;i--){			 		 					//3
+//		   		for(int j=1;j<=n-i;j++)   System.out.print(" ");//ç©ºæ ¼åˆ—	//1	
+//		   		for(int k=2*i-1;k>=1;k--) System.out.print("*");//æ˜Ÿå·åˆ—	//5	for(int k=1;k<=(2*i-1);k++)äº¦å¯ï¼Ÿï¼Ÿï¼Ÿ
+//		   		System.out.print("\n");
+//		   }
+//	
+			
+		   
+		   
+		   Scanner in=new Scanner(System.in);
+			System.out.println("è±å½¢çš„è¾¹é•¿ï¼š");								//4
+			int n=in.nextInt(); 
+			//ä¸ŠåŠéƒ¨åˆ†<åŒ…å«æ­£ä¸­é—´é‚£è¡Œ:4è¡Œ>
+			for(int i=1;i<=n;i++){										//1	4
+				for(int j=1;j<=(n-i);j++)   System.out.print(" ");//ç©ºæ ¼æ•°//3	0
+				for(int k=1;k<=2*i-1;k++){	//æ˜Ÿæ˜Ÿæ•°						 
+					if(k==1 || k==2*i-1)	System.out.print("*");		//1	7
+					else 					System.out.print(" ");
+				}
+				System.out.print("\n");
+			}
+			//ä¸‹åŠéƒ¨åˆ† <æ¯”ä¸Šç­éƒ¨åˆ†å°‘ä¸€è¡Œ:3è¡Œ>
+			for(int i=n-1;i>=0;i--){  
+				for(int j=1;j<=n-i;j++) 	System.out.print(" ");	//ç©ºæ ¼æ•°
+				for(int k=1;k<=2*i-1;k++){							//æ˜Ÿæ˜Ÿæ•°
+					if(k==1 || k==2*i-1) 	System.out.print("*");
+					else 					System.out.print(" ");
+				}
+				System.out.print("\n");
+			}
+
+
+		   
+		   
+		   
+		   
 		   
 		
 //		 //---------------------------
@@ -403,11 +447,11 @@ public class Program {
 //		macList.clear(); 
 //		macList.add(0);
 //		macList.add(2);
-//		System.out.println("×îÖÕµÄres: "+ getMinimalMacId()+  ";   item: "+macList.size() );
+//		System.out.println("æœ€ç»ˆçš„res: "+ getMinimalMacId()+  ";   item: "+macList.size() );
 
-	}// -----------main Ä©------------------------
+	}// -----------main æœ«------------------------
  
-	// -----------switchÑ­»· ÎŞbreak ¼ì²â------------------------
+	// -----------switchå¾ªç¯ æ— break æ£€æµ‹------------------------
 	 public int getValue(int i) {
 	        int result = 0;
 	        switch (i) {
@@ -427,11 +471,11 @@ public class Program {
 
 
 	
-	//Í³¼Æ×Ö·û´®findÔÚ×Ö·û´®srcÖĞ³öÏÖµÄ´ÎÊı
+	//ç»Ÿè®¡å­—ç¬¦ä¸²findåœ¨å­—ç¬¦ä¸²srcä¸­å‡ºç°çš„æ¬¡æ•°
 	public int hit(String src, String find) {
         if (src.length() < find.length()) return 0;
         char[] srcArr = src.toCharArray();
-        int count = 0; //´Ó±»Æ¥Åä×Ö·û´®srcµÄÊ×¸öÒ»¸öÒ»¸öÍùºóÍÆ£¬½ØÈ¡find×Ö·û´®³¤¶ÈµÄ×Ö·û´® Óëfind×Ö·û´® ¶Ô±È	StringBuilder
+        int count = 0; //ä»è¢«åŒ¹é…å­—ç¬¦ä¸²srcçš„é¦–ä¸ªä¸€ä¸ªä¸€ä¸ªå¾€åæ¨ï¼Œæˆªå–findå­—ç¬¦ä¸²é•¿åº¦çš„å­—ç¬¦ä¸² ä¸findå­—ç¬¦ä¸² å¯¹æ¯”	StringBuilder
         for (int i = 0; i <= src.length() - find.length(); i++) {
             StringBuffer buffer = new StringBuffer();
             for (int j = 0; j < find.length(); j++) {
@@ -477,8 +521,8 @@ public class Program {
 		 FileOutputStream fos = new FileOutputStream(out);       
 		 byte[] buf = new byte[1024];       
 		 int i = 0;        
-		 while((i=fis.read(buf))!=-1) { // Ã¿1024¡¢1024µÄ  ´ÓÓ²ÅÌÖĞ   ¶ÁÈ¡µ½  ÄÚ´æ
-			fos.write(buf, 0, i);       // Ã¿1024¡¢1024µÄ  ´ÓÄÚ´æÖĞ   Ğ´Èëµ½  Ó²ÅÌ    Ö±µ½Ğ´ÍêÎªÖ¹
+		 while((i=fis.read(buf))!=-1) { // æ¯1024ã€1024çš„  ä»ç¡¬ç›˜ä¸­   è¯»å–åˆ°  å†…å­˜
+			fos.write(buf, 0, i);       // æ¯1024ã€1024çš„  ä»å†…å­˜ä¸­   å†™å…¥åˆ°  ç¡¬ç›˜    ç›´åˆ°å†™å®Œä¸ºæ­¢
 		 }       
 		 fis.close();       
 		 fos.close(); 
@@ -487,10 +531,10 @@ public class Program {
 	
 	
 	
-	//4¡¢	Javaµİ¹éËã·¨ ¼ÆËã½×³Ë
+	//4ã€	Javaé€’å½’ç®—æ³• è®¡ç®—é˜¶ä¹˜
     public static long Factorial(int n) {
         if (n < 0) {
-            System.out.println("ÎŞĞ§ÊäÈë£¬ÇëÖØĞÂÊäÈë£¡");
+            System.out.println("æ— æ•ˆè¾“å…¥ï¼Œè¯·é‡æ–°è¾“å…¥ï¼");
             return 0;
         } else if (n == 1 || n == 0) {
             return 1;
@@ -505,12 +549,12 @@ public class Program {
 	private static int getMinimalMacId() { 
 		int i = 0;
         while (true) {
-            if (!macList.contains(i)) { // ²»°üº¬µÄ»° ¾Íbreak(Ìø³öµ±Ç°whileÑ­»·ÁË)ÁË£¡ macListÖĞµÄÖµÒ²ÊÇ´Ó0¿ªÊ¼µİÔöµÄ£¬
-                macList.add(i);         // ¼Ó¼¸´Î£¬i¾Í×ÔÔö¼¸´Î£¬²»¹ÜmacListÖĞµÄÖµÖØ¸´Óë·ñ
-                break; //breakÁË ¾Í²»×ßÏÂÃæµÄ i++;ÁË£¡£¡£¡
+            if (!macList.contains(i)) { // ä¸åŒ…å«çš„è¯ å°±break(è·³å‡ºå½“å‰whileå¾ªç¯äº†)äº†ï¼ macListä¸­çš„å€¼ä¹Ÿæ˜¯ä»0å¼€å§‹é€’å¢çš„ï¼Œ
+                macList.add(i);         // åŠ å‡ æ¬¡ï¼Œiå°±è‡ªå¢å‡ æ¬¡ï¼Œä¸ç®¡macListä¸­çš„å€¼é‡å¤ä¸å¦
+                break; //breakäº† å°±ä¸èµ°ä¸‹é¢çš„ i++;äº†ï¼ï¼ï¼
             }
-            i++;	// °üº¬µÄ»°¾ÍºöÂÔÄã£º°üº¬µÄ»°¾Í i++;¼ÌĞøÍùÏÂÑ­»·£¬Ö±µ½ÕÒµ½²»°üº¬µÄÄÇ¸öitem 
-            System.out.println("i++ºó´òÓ¡£º"+ i );
+            i++;	// åŒ…å«çš„è¯å°±å¿½ç•¥ä½ ï¼šåŒ…å«çš„è¯å°± i++;ç»§ç»­å¾€ä¸‹å¾ªç¯ï¼Œç›´åˆ°æ‰¾åˆ°ä¸åŒ…å«çš„é‚£ä¸ªitem 
+            System.out.println("i++åæ‰“å°ï¼š"+ i );
         }
         return i;
 	
@@ -525,7 +569,7 @@ public class Program {
     public static String listToString(List list, String separator) {
         StringBuilder sb = new StringBuilder();
 
-        for(int i = 0; i < list.size(); ++i) { // i++Ò²ĞĞ
+        for(int i = 0; i < list.size(); ++i) { // i++ä¹Ÿè¡Œ
             sb.append(list.get(i)).append(separator);
         }
 
@@ -545,33 +589,33 @@ public class Program {
 	
 	
 	public static HashMap<Integer, User> sortHashMap( HashMap<Integer, User> map){
-		// Ê×ÏÈÄÃµ½mapµÄ¼üÖµ¶Ô¼¯ºÏ
+		// é¦–å…ˆæ‹¿åˆ°mapçš„é”®å€¼å¯¹é›†åˆ
 		Set<Entry<Integer, User>> entrySet = map.entrySet();
-		// ½«set¼¯ºÏ×ªÎªList¼¯ºÏ£¬ÎªÊ²Ã´£¬ÎªÁËÊ¹ÓÃ¹¤¾ßÀàµÄÅÅĞò·½·¨
+		// å°†seté›†åˆè½¬ä¸ºListé›†åˆï¼Œä¸ºä»€ä¹ˆï¼Œä¸ºäº†ä½¿ç”¨å·¥å…·ç±»çš„æ’åºæ–¹æ³•
 		List<Entry<Integer, User>> list = new ArrayList<Entry<Integer, User>>(entrySet);
-		// Ê¹ÓÃCollections¼¯ºÏ¹¤¾ßÀà¶Ôlist½øĞĞÅÅĞò£¬ÅÅĞò¹æÔòÊ¹ÓÃÄäÃûÄÚ²¿ÀàÀ´ÊµÏÖ
+		// ä½¿ç”¨Collectionsé›†åˆå·¥å…·ç±»å¯¹listè¿›è¡Œæ’åºï¼Œæ’åºè§„åˆ™ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»æ¥å®ç°
 		Collections.sort(list, new Comparator<Entry<Integer, User>>() {
 			@Override
 			public int compare(Entry<Integer, User> o1, Entry<Integer, User> o2) {
-				//°´ÕÕÒªÇó¸ù¾İUserµÄageµÄµ¹Ğò½øĞĞÅÅ
-				return o2.getValue().getAge() - o1.getValue().getAge(); //°´ÕÕuserµÄageµ¹ĞòÅÅÁĞ
+				//æŒ‰ç…§è¦æ±‚æ ¹æ®Userçš„ageçš„å€’åºè¿›è¡Œæ’
+				return o2.getValue().getAge() - o1.getValue().getAge(); //æŒ‰ç…§userçš„ageå€’åºæ’åˆ—
 			}
 		});
-		//´´½¨Ò»¸öĞÂµÄÓĞĞòµÄHashMap×ÓÀàµÄ¼¯ºÏ
+		//åˆ›å»ºä¸€ä¸ªæ–°çš„æœ‰åºçš„HashMapå­ç±»çš„é›†åˆ
 		LinkedHashMap<Integer, User> linkedHashMap = new LinkedHashMap<Integer, User>();
-		//½«ListÖĞµÄÊı¾İ´æ´¢ÔÚLinkedHashMapÖĞ
+		//å°†Listä¸­çš„æ•°æ®å­˜å‚¨åœ¨LinkedHashMapä¸­
 		for (Entry<Integer,User> entry : list) {
 			linkedHashMap.put(entry.getKey(), entry.getValue());
 		}
-		//·µ»Ø½á¹û
+		//è¿”å›ç»“æœ
 		return linkedHashMap;
 	}
 	
 	
 	 
 	
-	//Ìæ´ú JDK8µÄ map.getOrDefault()·½·¨£º 
-	public Set<String> replace_getOrDefault(Map< Class<?>, Set<String> > map, Class<?> type ){	//¼ì²éÒ»¸ömapÖĞÆ¥ÅäÌá¹©¼üµÄÖµÊÇ·ñÕÒµ½£¬Ã»ÕÒµ½Æ¥ÅäÏî¾ÍÊ¹ÓÃÒ»¸öÄ¬ÈÏÖµ
+	//æ›¿ä»£ JDK8çš„ map.getOrDefault()æ–¹æ³•ï¼š 
+	public Set<String> replace_getOrDefault(Map< Class<?>, Set<String> > map, Class<?> type ){	//æ£€æŸ¥ä¸€ä¸ªmapä¸­åŒ¹é…æä¾›é”®çš„å€¼æ˜¯å¦æ‰¾åˆ°ï¼Œæ²¡æ‰¾åˆ°åŒ¹é…é¡¹å°±ä½¿ç”¨ä¸€ä¸ªé»˜è®¤å€¼
     	Set<String> set = null; 
     	if(map.containsKey(type)){
     		if(map.get(type) == null){
