@@ -1,4 +1,4 @@
-package com.test.collection.°´¶ÔÏóÊôĞÔÅÅĞò;
+package com.test.collection.æŒ‰å¯¹è±¡å±æ€§æ’åº;
 
 public class User {
 	String name;

@@ -1,4 +1,4 @@
-package com.test.collection.°´×Ö´®ÖĞÖØ¸´µÄchar½øĞĞÅÅĞòÊä³ö;
+package com.test.collection.æŒ‰å­—ä¸²ä¸­é‡å¤çš„charè¿›è¡Œæ’åºè¾“å‡º;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +15,7 @@ public class testmain {
 		String b="dab";
 		
 		
-		String c= "¿ì¿ì¿ì¿ì¿ì´ò´ò´ò¿¨°¡»ú¿¨°¡µÄµÄµÄµÄµÄ¿Õ";
+		String c= "å¿«å¿«å¿«å¿«å¿«æ‰“æ‰“æ‰“å¡å•Šæœºå¡å•Šçš„çš„çš„çš„çš„ç©º";
 		t2.doit(c);
  
 		
@@ -26,10 +26,10 @@ public class testmain {
 	public static String queryURL(String url){
 //		Object[] obj = {};
 		Map<String, String> mm = new HashMap<String, String>(); 
-		String[] params = url.split("\\?")[1].split("&"); //ÒòÎª+¡¢*¡¢|¡¢\¡¢?µÈ·ûºÅÔÚÕıÔò±í´ïÊ¾ÖĞÓĞÏàÓ¦µÄ²»Í¬ÒâÒå£¬ËùÒÔÔÚÊ¹ÓÃÊ±Òª½øĞĞ×ªÒå´¦Àí
+		String[] params = url.split("\\?")[1].split("&"); //å› ä¸º+ã€*ã€|ã€\ã€?ç­‰ç¬¦å·åœ¨æ­£åˆ™è¡¨è¾¾ç¤ºä¸­æœ‰ç›¸åº”çš„ä¸åŒæ„ä¹‰ï¼Œæ‰€ä»¥åœ¨ä½¿ç”¨æ—¶è¦è¿›è¡Œè½¬ä¹‰å¤„ç†
 		for(int i=0;i<params.length;i++){
 			String[] param = params[i].split("=");
-//	         obj[param[0]] = param[1];//Îª¶ÔÏó¸³Öµ Ïàµ±ÓÚjavaµÄlist.add()
+//	         obj[param[0]] = param[1];//ä¸ºå¯¹è±¡èµ‹å€¼ ç›¸å½“äºjavaçš„list.add()
 			mm.put(param[0], param[1]);
 	     }  
 	     return mm.toString();

@@ -1,41 +1,41 @@
-package com.test.thread.ÖĞ¹úºÃ»ùÓÑ;
-import com.test.thread.ÖĞ¹úºÃ»ùÓÑ.GayFriend.iDoHomeWorkListener;
+package com.test.thread.ä¸­å›½å¥½åŸºå‹;
+import com.test.thread.ä¸­å›½å¥½åŸºå‹.GayFriend.iDoHomeWorkListener;
 //http://blog.sina.com.cn/s/blog_8417aea801010aj1.html
-public class Student implements iDoHomeWorkListener{ //ÎÒÍ¨¹ıimplements»ùÓÑ¶¨ÒåµÄ(¿ÉÒÔ°ï±ğÈËĞ´×÷ÒµµÄ)Õâ¸ö½Ó¿Ú£¬´´Ôì³öÒ»¸öĞéÄâµÄ¡°ÎÒ¡± À´ÌæÎÒdoHomeWork
-	//Student×Ô¼ºµÄÄÜÁ¦1  			ÎÊÌâ	 ,    ÊÒÓÑ
+public class Student implements iDoHomeWorkListener{ //æˆ‘é€šè¿‡implementsåŸºå‹å®šä¹‰çš„(å¯ä»¥å¸®åˆ«äººå†™ä½œä¸šçš„)è¿™ä¸ªæ¥å£ï¼Œåˆ›é€ å‡ºä¸€ä¸ªè™šæ‹Ÿçš„â€œæˆ‘â€ æ¥æ›¿æˆ‘doHomeWork
+	//Studentè‡ªå·±çš„èƒ½åŠ›1  			é—®é¢˜	 ,    å®¤å‹
 	public void ask(final String question, final GayFriend gay) {
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
-				// ÉáÓÑ»Ø´ğÎÊÌâµÄÄÜÁ¦£ºgetAnswer£¨...£©
-				gay.getAnswer(question, Student.this); //if ¸ø³öÁËÎÊÌâºó  µÈ´ıÈô¸ÉÊ±¼äºóÓĞÁË answerÊ±  ¾ÍÓÃ»Øµ÷º¯Êı Í¨Öª¡®·¢ÎÊÕß¡¯ 
-				//ÎÒÍ¨¹ıimplements»ùÓÑ¶¨ÒåµÄ(¿ÉÒÔ°ï±ğÈËĞ´×÷ÒµµÄ)Õâ¸ö½Ó¿Ú£¬´´Ôì³öÒ»¸öĞéÄâµÄ¡°ÎÒ(Student.this)¡± À´ÌæÎÒdoHomeWork		
+				// èˆå‹å›ç­”é—®é¢˜çš„èƒ½åŠ›ï¼šgetAnswerï¼ˆ...ï¼‰
+				gay.getAnswer(question, Student.this); //if ç»™å‡ºäº†é—®é¢˜å  ç­‰å¾…è‹¥å¹²æ—¶é—´åæœ‰äº† answeræ—¶  å°±ç”¨å›è°ƒå‡½æ•° é€šçŸ¥â€˜å‘é—®è€…â€™ 
+				//æˆ‘é€šè¿‡implementsåŸºå‹å®šä¹‰çš„(å¯ä»¥å¸®åˆ«äººå†™ä½œä¸šçš„)è¿™ä¸ªæ¥å£ï¼Œåˆ›é€ å‡ºä¸€ä¸ªè™šæ‹Ÿçš„â€œæˆ‘(Student.this)â€ æ¥æ›¿æˆ‘doHomeWork		
 			}
 		}).start();
-		goHome();//Student×Ô¼ºµÄÄÜÁ¦1£º×÷Òµ½»¸øÄãÁË£¬student¿ÉÒÔ×öÈÎºÎÊÂ£¬½âñî
+		goHome();//Studentè‡ªå·±çš„èƒ½åŠ›1ï¼šä½œä¸šäº¤ç»™ä½ äº†ï¼Œstudentå¯ä»¥åšä»»ä½•äº‹ï¼Œè§£è€¦
 	}
-    //Student×Ô¼ºµÄÄÜÁ¦1 
+    //Studentè‡ªå·±çš„èƒ½åŠ›1 
 	public void goHome() {
-		System.out.println("×÷Òµ½»¸øÄãÁË£¬ºÃ»ùÓÑ£¬ÎÒ»Ø¼ÒÁËÍæÓÎ(½âñî)À²¡­¡­ÃÀ×Ì×Ì^.^¡£");
+		System.out.println("ä½œä¸šäº¤ç»™ä½ äº†ï¼Œå¥½åŸºå‹ï¼Œæˆ‘å›å®¶äº†ç©æ¸¸(è§£è€¦)å•¦â€¦â€¦ç¾æ»‹æ»‹^.^ã€‚");
 	}
 
 	
-	@Override //implements ¼àÌıinterfaceºó ÖØÔØµÄ·½·¨
+	@Override //implements ç›‘å¬interfaceå é‡è½½çš„æ–¹æ³•
 	public void answerAbstractFunction(String question, String answer) {
-		System.out.println("×÷Òµ±¾");
+		System.out.println("ä½œä¸šæœ¬");
 		if (answer != null) {
-			System.out.println("×÷Òµ£º" + question + " ´ğ°¸£º" + answer);
+			System.out.println("ä½œä¸šï¼š" + question + " ç­”æ¡ˆï¼š" + answer);
 		} else {
-			System.out.println("×÷Òµ£º" + question + " ´ğ°¸£º" + "(¿Õ°×)");
+			System.out.println("ä½œä¸šï¼š" + question + " ç­”æ¡ˆï¼š" + "(ç©ºç™½)");
 		}
 	}
 	
-	//³ÌĞòrunÈë¿Ú
+	//ç¨‹åºrunå…¥å£
 	public static void main(String[] args) {
-		String question = "µ±xÇ÷ÏòÓÚ0£¬sin(x)/x =?";
+		String question = "å½“xè¶‹å‘äº0ï¼Œsin(x)/x =?";
 		Student student = new Student();
-		student.ask(question, new GayFriend());	// studentµÄÄÜÁ¦2£º ask(...)
-		//             ÎÊÌâ	 ,  ÊÒÓÑ
+		student.ask(question, new GayFriend());	// studentçš„èƒ½åŠ›2ï¼š ask(...)
+		//             é—®é¢˜	 ,  å®¤å‹
 	}
 	
 }

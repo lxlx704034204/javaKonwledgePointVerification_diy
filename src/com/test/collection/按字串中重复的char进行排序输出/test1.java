@@ -1,17 +1,17 @@
-package com.test.collection.°´×Ö´®ÖĞÖØ¸´µÄchar½øĞĞÅÅĞòÊä³ö;
+package com.test.collection.æŒ‰å­—ä¸²ä¸­é‡å¤çš„charè¿›è¡Œæ’åºè¾“å‡º;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class test1 {
 	
-	public int find2(String src, String find) { //·½·¨2
+	public int find2(String src, String find) { //æ–¹æ³•2
 		if (src.length() < find.length()) return 0;
-		char[] srcArr = src.toCharArray();//°ÑString×ª»¯ÎªChar[]²ÅÄÜ ¡±Æ´½Ó¡± ²Ù×÷
-		int count = 0; //´Ó±»Æ¥Åä×Ö·û´®srcµÄÊ×¸öÒ»¸öÒ»¸öÍùºóÍÆ£¬½ØÈ¡find×Ö·û´®³¤¶ÈµÄ×Ö·û´® Óëfind×Ö·û´® ¶Ô±È
-		for (int i = 0; i < src.length() - find.length() + 1; i++) { // ×¢ÒâÕâ¸ö +1 
+		char[] srcArr = src.toCharArray();//æŠŠStringè½¬åŒ–ä¸ºChar[]æ‰èƒ½ â€æ‹¼æ¥â€ æ“ä½œ
+		int count = 0; //ä»è¢«åŒ¹é…å­—ç¬¦ä¸²srcçš„é¦–ä¸ªä¸€ä¸ªä¸€ä¸ªå¾€åæ¨ï¼Œæˆªå–findå­—ç¬¦ä¸²é•¿åº¦çš„å­—ç¬¦ä¸² ä¸findå­—ç¬¦ä¸² å¯¹æ¯”
+		for (int i = 0; i < src.length() - find.length() + 1; i++) { // æ³¨æ„è¿™ä¸ª +1 
 			StringBuffer buffer = new StringBuffer();
-			//ÕâÀï±ØĞëÓÃbuffer°ÑcharÊı×é×ª»¯³ÉString¡£×¢£º(char[]Ã»ÓĞ.toString()·½·¨£¡£¡£¡)
+			//è¿™é‡Œå¿…é¡»ç”¨bufferæŠŠcharæ•°ç»„è½¬åŒ–æˆStringã€‚æ³¨ï¼š(char[]æ²¡æœ‰.toString()æ–¹æ³•ï¼ï¼ï¼)
 			for (int j = 0; j < find.length(); j++) {
 				buffer.append(srcArr[i + j]);
 //				System.out.println("--haha->"+buffer.toString());
@@ -22,9 +22,9 @@ public class test1 {
 	}
 
 	
-	public int find1(String src, String find) { //·½·¨1 
+	public int find1(String src, String find) { //æ–¹æ³•1 
 		if (src.length() < find.length()) return 0;
-		Matcher m = Pattern.compile(find).matcher(src);// Pattern [?p?tn].compile: Ä£Ê½.±àÒë
+		Matcher m = Pattern.compile(find).matcher(src);// Pattern [?p?tn].compile: æ¨¡å¼.ç¼–è¯‘
 		int count = 0;
 		while(m.find()){ count++; } 
 		return count;

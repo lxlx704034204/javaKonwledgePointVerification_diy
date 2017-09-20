@@ -1,4 +1,4 @@
-package com.test.collection.°´¶ÔÏóÊôĞÔÅÅĞò;
+package com.test.collection.æŒ‰å¯¹è±¡å±æ€§æ’åº;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,37 +12,37 @@ import java.util.Set;
 public class HashMapTest {
 	public static void main(String[] args) {
 		HashMap<Integer, User> users = new HashMap<>();
-		users.put(1, new User("ÕÅÈı", 25));
-		users.put(3, new User("ÀîËÄ", 22));
-		users.put(2, new User("ÍõÎå", 28));
-		System.out.println("°´ÊôĞÔÅÅĞòÇ°£º" + users.toString());
+		users.put(1, new User("å¼ ä¸‰", 25));
+		users.put(3, new User("æå››", 22));
+		users.put(2, new User("ç‹äº”", 28));
+		System.out.println("æŒ‰å±æ€§æ’åºå‰ï¼š" + users.toString());
 		HashMap<Integer,User> sortHashMap = sortHashMap(users);
-		System.out.println("°´ÊôĞÔÅÅĞòºó£º" + sortHashMap);
+		System.out.println("æŒ‰å±æ€§æ’åºåï¼š" + sortHashMap);
 		/*
-		  	¿ØÖÆÌ¨Êä³öÄÚÈİ
-		   	{1=User [name=ÕÅÈı, age=25], 2=User [name=ÍõÎå, age=28], 3=User [name=ÀîËÄ, age=22]}
-			{2=User [name=ÍõÎå, age=28], 1=User [name=ÕÅÈı, age=25], 3=User [name=ÀîËÄ, age=22]}
-			ÒÑÖªÒ»¸öHashMap<Integer£¬User>¼¯ºÏ£¬ UserÓĞname£¨String£©ºÍage£¨int£©ÊôĞÔ¡£ÇëĞ´Ò»¸ö·½·¨ÊµÏÖ¶ÔHashMapµÄÅÅĞò¹¦ÄÜ£¬¸Ã·½·¨½ÓÊÕHashMap<Integer£¬User>ÎªĞÎ²Î£¬
-		·µ»ØÀàĞÍÎªHashMap<Integer£¬User>£¬ÒªÇó¶ÔHashMapÖĞµÄUserµÄageµ¹Ğò½øĞĞÅÅĞò¡£ÅÅĞòÊ±key=value¼üÖµ¶Ô²»µÃ²ğÉ¢¡£
-		tips £ºÒª×ö³öÕâµÀÌâ±ØĞë¶Ô¼¯ºÏµÄÌåÏµ½á¹¹·Ç³£µÄÊìÏ¤¡£HashMap±¾Éí¾ÍÊÇ²»¿ÉÅÅĞòµÄ£¬µ«ÊÇ¸ÃµÀÌâÆ«Æ«ÈÃ¸øHashMapÅÅĞò£¬ÄÇÎÒÃÇ¾ÍµÃÏëÔÚAPIÖĞÓĞÃ»ÓĞÕâÑùµÄMap½á¹¹ÊÇÓĞĞòµÄ£¬
-		µ«ÊÇÓĞ¸öLinkedHashMap£¬¡¾ËüÊÇMap½á¹¹+Á´±í½á¹¹+ÓĞĞòµÄ£¬¸ü¿ÉÏ²µÄÊÇËûÊÇHashMapµÄ×ÓÀà¡¿£¬ÎÒÃÇ·µ»ØLinkedHashMap<Integer,User>¼´¿É£¬»¹·ûºÏÃæÏò½Ó¿Ú£¨¸¸Àà±à³ÌµÄË¼Ïë£©¡£
-		µ«·²ÊÇ¶Ô¼¯ºÏµÄ²Ù×÷£¬ÎÒÃÇÓ¦¸Ã±£³ÖÒ»¸öÔ­Ôò¾ÍÊÇÄÜÓÃJDKÖĞµÄAPI¾ÍÓĞJDKÖĞµÄAPI£¬±ÈÈçÅÅĞòËã·¨ÎÒÃÇ²»Ó¦¸ÃÈ¥ÓÃÃ°Åİ»òÕßÑ¡Ôñ£¬¶øÊÇÊ×ÏÈÏëµ½ÓÃCollections¼¯ºÏ¹¤¾ßÀà¡£
+		  	æ§åˆ¶å°è¾“å‡ºå†…å®¹
+		   	{1=User [name=å¼ ä¸‰, age=25], 2=User [name=ç‹äº”, age=28], 3=User [name=æå››, age=22]}
+			{2=User [name=ç‹äº”, age=28], 1=User [name=å¼ ä¸‰, age=25], 3=User [name=æå››, age=22]}
+			å·²çŸ¥ä¸€ä¸ªHashMap<Integerï¼ŒUser>é›†åˆï¼Œ Useræœ‰nameï¼ˆStringï¼‰å’Œageï¼ˆintï¼‰å±æ€§ã€‚è¯·å†™ä¸€ä¸ªæ–¹æ³•å®ç°å¯¹HashMapçš„æ’åºåŠŸèƒ½ï¼Œè¯¥æ–¹æ³•æ¥æ”¶HashMap<Integerï¼ŒUser>ä¸ºå½¢å‚ï¼Œ
+		è¿”å›ç±»å‹ä¸ºHashMap<Integerï¼ŒUser>ï¼Œè¦æ±‚å¯¹HashMapä¸­çš„Userçš„ageå€’åºè¿›è¡Œæ’åºã€‚æ’åºæ—¶key=valueé”®å€¼å¯¹ä¸å¾—æ‹†æ•£ã€‚
+		tips ï¼šè¦åšå‡ºè¿™é“é¢˜å¿…é¡»å¯¹é›†åˆçš„ä½“ç³»ç»“æ„éå¸¸çš„ç†Ÿæ‚‰ã€‚HashMapæœ¬èº«å°±æ˜¯ä¸å¯æ’åºçš„ï¼Œä½†æ˜¯è¯¥é“é¢˜ååè®©ç»™HashMapæ’åºï¼Œé‚£æˆ‘ä»¬å°±å¾—æƒ³åœ¨APIä¸­æœ‰æ²¡æœ‰è¿™æ ·çš„Mapç»“æ„æ˜¯æœ‰åºçš„ï¼Œ
+		ä½†æ˜¯æœ‰ä¸ªLinkedHashMapï¼Œã€å®ƒæ˜¯Mapç»“æ„+é“¾è¡¨ç»“æ„+æœ‰åºçš„ï¼Œæ›´å¯å–œçš„æ˜¯ä»–æ˜¯HashMapçš„å­ç±»ã€‘ï¼Œæˆ‘ä»¬è¿”å›LinkedHashMap<Integer,User>å³å¯ï¼Œè¿˜ç¬¦åˆé¢å‘æ¥å£ï¼ˆçˆ¶ç±»ç¼–ç¨‹çš„æ€æƒ³ï¼‰ã€‚
+		ä½†å‡¡æ˜¯å¯¹é›†åˆçš„æ“ä½œï¼Œæˆ‘ä»¬åº”è¯¥ä¿æŒä¸€ä¸ªåŸåˆ™å°±æ˜¯èƒ½ç”¨JDKä¸­çš„APIå°±æœ‰JDKä¸­çš„APIï¼Œæ¯”å¦‚æ’åºç®—æ³•æˆ‘ä»¬ä¸åº”è¯¥å»ç”¨å†’æ³¡æˆ–è€…é€‰æ‹©ï¼Œè€Œæ˜¯é¦–å…ˆæƒ³åˆ°ç”¨Collectionsé›†åˆå·¥å…·ç±»ã€‚
 		 */
 	}
 
 	public static HashMap<Integer, User> sortHashMap(HashMap<Integer, User> map) {
-		// Ê×ÏÈÄÃµ½mapµÄ¼üÖµ¶Ô¼¯ºÏ
+		// é¦–å…ˆæ‹¿åˆ°mapçš„é”®å€¼å¯¹é›†åˆ
 		Set<Entry<Integer, User>> entrySet = map.entrySet();
 		 
-		List<Entry<Integer, User>> entryList = new ArrayList<Entry<Integer, User>>(entrySet);//set×ªList£¬ÎªÁËÊ¹ÓÃ¹¤¾ßÀàµÄÅÅĞò·½·¨
-		Collections.sort(entryList, new Comparator<Entry<Integer, User>>() {// Ê¹ÓÃCollections¼¯ºÏ¹¤¾ßÀà¶Ôlist½øĞĞÅÅĞò£¬ÅÅĞò¹æÔòÊ¹ÓÃÄäÃûÄÚ²¿ÀàÀ´ÊµÏÖ
+		List<Entry<Integer, User>> entryList = new ArrayList<Entry<Integer, User>>(entrySet);//setè½¬Listï¼Œä¸ºäº†ä½¿ç”¨å·¥å…·ç±»çš„æ’åºæ–¹æ³•
+		Collections.sort(entryList, new Comparator<Entry<Integer, User>>() {// ä½¿ç”¨Collectionsé›†åˆå·¥å…·ç±»å¯¹listè¿›è¡Œæ’åºï¼Œæ’åºè§„åˆ™ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»æ¥å®ç°
 			@Override
 			public int compare(Entry<Integer, User> o1, Entry<Integer, User> o2) {
-				return o2.getValue().getAge() - o1.getValue().getAge();//¸ù¾İUserµÄageµ¹Ğò
+				return o2.getValue().getAge() - o1.getValue().getAge();//æ ¹æ®Userçš„ageå€’åº
 			}
 		});
-		LinkedHashMap<Integer, User> linkedHashMap = new LinkedHashMap<Integer, User>();//´´½¨Ò»¸öĞÂµÄÓĞĞòµÄHashMap×ÓÀàµÄ¼¯ºÏ
-		for(Entry<Integer, User> entry : entryList){//½«ListÖĞµÄÊı¾İ´æ´¢ÔÚLinkedHashMapÖĞ
+		LinkedHashMap<Integer, User> linkedHashMap = new LinkedHashMap<Integer, User>();//åˆ›å»ºä¸€ä¸ªæ–°çš„æœ‰åºçš„HashMapå­ç±»çš„é›†åˆ
+		for(Entry<Integer, User> entry : entryList){//å°†Listä¸­çš„æ•°æ®å­˜å‚¨åœ¨LinkedHashMapä¸­
 			linkedHashMap.put(entry.getKey(), entry.getValue());
 		}
 		return linkedHashMap;

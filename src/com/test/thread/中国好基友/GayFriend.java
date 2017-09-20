@@ -1,28 +1,28 @@
-package com.test.thread.ÖĞ¹úºÃ»ùÓÑ;
+package com.test.thread.ä¸­å›½å¥½åŸºå‹;
 
 import java.util.concurrent.TimeUnit;
 
 public class GayFriend {
 	public void getAnswer(String question, iDoHomeWorkListener someone) {
-		System.out.println("Ë¼¿¼£º");	//Ë¼¿¼3Ãë
+		System.out.println("æ€è€ƒï¼š");	//æ€è€ƒ3ç§’
 		try {
 			TimeUnit.SECONDS.sleep(3);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		if ("µ±xÇ÷ÏòÓÚ0£¬sin(x)/x =?".equals(question)) {
+		if ("å½“xè¶‹å‘äº0ï¼Œsin(x)/x =?".equals(question)) {
 			someone.answerAbstractFunction(question, "1");
-			//		  ´òµç»°¸æÖª(»Øµ÷)  ÎÊÌâ	   ´ğ°¸
+			//		  æ‰“ç”µè¯å‘ŠçŸ¥(å›è°ƒ)  é—®é¢˜	   ç­”æ¡ˆ
 		} else {
 			someone.answerAbstractFunction(question, null);
-			//		     ´òµç»°¸æÖª(»Øµ÷)  ÎÊÌâ	   ´ğ°¸
+			//		     æ‰“ç”µè¯å‘ŠçŸ¥(å›è°ƒ)  é—®é¢˜	   ç­”æ¡ˆ
 		}
 	}
 	
-	//gayfriend ¶¨ÒåµÄ¿ÉÒÔ°ïÎÒ Ğ´×÷ÒµµÄ ¼àÌıinterface
+	//gayfriend å®šä¹‰çš„å¯ä»¥å¸®æˆ‘ å†™ä½œä¸šçš„ ç›‘å¬interface
 	public interface iDoHomeWorkListener {
 		public void answerAbstractFunction(String question, String answer);
-		//			´òµç»°¸æÖª(»Øµ÷)        				ÎÊÌâ		         ´ğ°¸
+		//			æ‰“ç”µè¯å‘ŠçŸ¥(å›è°ƒ)        				é—®é¢˜		         ç­”æ¡ˆ
 	}
 
 }

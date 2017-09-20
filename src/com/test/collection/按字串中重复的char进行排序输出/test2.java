@@ -1,4 +1,4 @@
-package com.test.collection.°´×Ö´®ÖĞÖØ¸´µÄchar½øĞĞÅÅĞòÊä³ö;
+package com.test.collection.æŒ‰å­—ä¸²ä¸­é‡å¤çš„charè¿›è¡Œæ’åºè¾“å‡º;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,47 +7,47 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class test2 {  //¸ø¶¨Ò»¸östring,°´ÖØ¸´´ÎÊıµÄÉıĞòÅÅÁĞ Í³¼ÆÆäÖĞÖØ¸´µÄchar 
+public class test2 {  //ç»™å®šä¸€ä¸ªstring,æŒ‰é‡å¤æ¬¡æ•°çš„å‡åºæ’åˆ— ç»Ÿè®¡å…¶ä¸­é‡å¤çš„char 
 
 	public void doit(String src) { 
 		test1 t1 = new test1(); 
 		Map<String, Integer> mmPool = new HashMap<String, Integer>();
 
 		for (int i = 0; i < src.length(); i++) { 
-			String char_temp = src.substring(i, i + 1);	//ÖØ¸´µÄchar
-			int count = t1.find2(src, char_temp);		//ÖØ¸´µÄchar µÄÖØ¸´´ÎÊı 
-			mmPool.put(char_temp, count);				//ÖØ¸´µÄchar ¾ßÓĞÎ¨Ò»ĞÔ ¹Ê×÷Îªkey
+			String char_temp = src.substring(i, i + 1);	//é‡å¤çš„char
+			int count = t1.find2(src, char_temp);		//é‡å¤çš„char çš„é‡å¤æ¬¡æ•° 
+			mmPool.put(char_temp, count);				//é‡å¤çš„char å…·æœ‰å”¯ä¸€æ€§ æ•…ä½œä¸ºkey
 		}
 
 		List<Integer> mmValuelist = new ArrayList<Integer>();
 		for (String g : mmPool.keySet()) 	mmValuelist.add(mmPool.get(g));			
-															//mmµÄkeyset[]Ã¿¸ökeyËù¶ÔÓ¦µÄvalue ×ª»¯ÎªmmValuelist
+															//mmçš„keyset[]æ¯ä¸ªkeyæ‰€å¯¹åº”çš„value è½¬åŒ–ä¸ºmmValuelist
 		
-		Integer[] ss = mmValuelist.toArray(new Integer[0]);	//mmµÄmmValuelist ×ª»¯ÎªmmValueset[]Êı×é
-//		int[] ss = new int[mmValuelist.size()];				//mmµÄmmValuelist ×ª»¯ÎªmmValueset[]Êı×é
+		Integer[] ss = mmValuelist.toArray(new Integer[0]);	//mmçš„mmValuelist è½¬åŒ–ä¸ºmmValueset[]æ•°ç»„
+//		int[] ss = new int[mmValuelist.size()];				//mmçš„mmValuelist è½¬åŒ–ä¸ºmmValueset[]æ•°ç»„
 //		for (int i = 0; i < mmValuelist.size(); i++) {
 //			ss[i] = mmValuelist.get(i);
 //		}
 
-		Arrays.sort(ss);	//ÉıĞò
+		Arrays.sort(ss);	//å‡åº
 		int jj=0;
 		for(int ii : ss) 	jj=jj+ii;
-//		System.out.println(jj);//Ò»¹²ÓĞ¶àÉÙ¸öÖØ¸´µÄchar
+//		System.out.println(jj);//ä¸€å…±æœ‰å¤šå°‘ä¸ªé‡å¤çš„char
 		
-		List<String> mmValuelist_ideal=new ArrayList<String>();//diy´æ·ÅkeysetµÄ¼¯ºÏ
+		List<String> mmValuelist_ideal=new ArrayList<String>();//diyå­˜æ”¾keysetçš„é›†åˆ
 		
 		for(int i=0; i < ss.length; i++){
 			for (Entry<String,Integer> entryPool : mmPool.entrySet()) {
-				if(ss[i] == entryPool.getValue()){	// diy¼ÙÉèÌõ¼ş£¨Ò²ÕıÊÇÎÒÃÇÏëÒªµÄ£¡£©
-					int h=0;				    	// diy¼ÙÉèÌõ¼ş ÓÃstate=0À´±ê¼Ç£¬¹ş¹ş
+				if(ss[i] == entryPool.getValue()){	// diyå‡è®¾æ¡ä»¶ï¼ˆä¹Ÿæ­£æ˜¯æˆ‘ä»¬æƒ³è¦çš„ï¼ï¼‰
+					int h=0;				    	// diyå‡è®¾æ¡ä»¶ ç”¨state=0æ¥æ ‡è®°ï¼Œå“ˆå“ˆ
 					for(String ideal : mmValuelist_ideal){
 						if(entryPool.getKey().equals(ideal)) 	h=1; 
-						// Èç¹ûÖØ¸´ÁË£¬Ôò±ê¼Çstate=1£¨ifÀíÏëµÄÔ¤Éèlist¼¯ºÏÖĞ ÒÑ¾­º¬ÓĞÔ­ÓĞµÄmmPoolµÄvalueÁË£¬Ôò±ê¼ÇÆğÀ´£©
+						// å¦‚æœé‡å¤äº†ï¼Œåˆ™æ ‡è®°state=1ï¼ˆifç†æƒ³çš„é¢„è®¾listé›†åˆä¸­ å·²ç»å«æœ‰åŸæœ‰çš„mmPoolçš„valueäº†ï¼Œåˆ™æ ‡è®°èµ·æ¥ï¼‰
 					}
 					
 					if(h==0){
 						mmValuelist_ideal.add(entryPool.getKey()); 
-						System.out.println("×Ö£º"+entryPool.getKey()+"----------³öÏÖµÄ´ÎÊı: "+entryPool.getValue());
+						System.out.println("å­—ï¼š"+entryPool.getKey()+"----------å‡ºç°çš„æ¬¡æ•°: "+entryPool.getValue());
 					}
 				}
 			}
